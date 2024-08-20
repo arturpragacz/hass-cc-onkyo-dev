@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-import pyeiscp
+from . import pyeiscp
 
 
 @dataclass

@@ -6,7 +6,7 @@ import asyncio
 import logging
 from typing import Any, Literal
 
-import pyeiscp
+from . import pyeiscp
 import voluptuous as vol
 
 from homeassistant.components.media_player import (
