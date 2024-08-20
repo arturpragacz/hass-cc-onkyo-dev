@@ -47,5 +47,6 @@
       "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:3",
       "manufacturer": "Pioneer"
     }
-  ]
+  ],
+  "version": "0.0.0-dev"
 }
