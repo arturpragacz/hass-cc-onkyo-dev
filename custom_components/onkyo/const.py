@@ -4,7 +4,7 @@ from enum import Enum
 import typing
 from typing import ClassVar, Literal, Self
 
-import pyeiscp
+from . import pyeiscp
 
 DOMAIN = "onkyo"
 
