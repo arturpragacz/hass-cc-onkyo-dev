@@ -3,8 +3,7 @@
 import typing
 from typing import Literal
 
-import pyeiscp
-
+from . import pyeiscp
 from .helpers import EnumWithMeaning
 
 DOMAIN = "onkyo"

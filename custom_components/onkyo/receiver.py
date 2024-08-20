@@ -9,8 +9,7 @@ from dataclasses import dataclass, field
 import logging
 from typing import Any
 
-import pyeiscp
-
+from . import pyeiscp
 from .const import DEVICE_DISCOVERY_TIMEOUT, DEVICE_INTERVIEW_TIMEOUT, ZONES
 
 _LOGGER = logging.getLogger(__name__)
