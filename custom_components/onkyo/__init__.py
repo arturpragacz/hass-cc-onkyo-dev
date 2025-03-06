@@ -85,3 +85,20 @@ async def async_unload_entry(hass: HomeAssistant, entry: OnkyoConfigEntry) -> bo
     entry.runtime_data.manager.start_unloading()
 
     return await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
+
+
+async def async_migrate_entry(hass: HomeAssistant, entry: OnkyoConfigEntry) -> bool:
+    """Migrate entry."""
+    _LOGGER.debug("Migrating from version %s.%s", entry.version, entry.minor_version)
+
+    if entry.version > 1:
+        # This means the user has downgraded from a future version
+        return False
+
+    if entry.version == 1:
+        if entry.minor_version == 2:
+            hass.config_entries.async_update_entry(entry, minor_version=1)
+
+    _LOGGER.debug("Migrated to version %s.%s", entry.version, entry.minor_version)
+
+    return True
