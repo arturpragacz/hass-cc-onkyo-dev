@@ -1,0 +1,93 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ure\u0111aj je ve\u0107 konfigurisan",
+            "no_devices_found": "Nijedan ure\u0111aj nije prona\u0111en na mre\u017ei",
+            "unique_id_mismatch": "Serijski broj ure\u0111aja se ne podudara sa prethodnim serijskim brojem",
+            "unknown": "Neo\u010dekivana gre\u0161ka"
+        },
+        "error": {
+            "cannot_connect": "Nije uspelo povezivanje",
+            "empty_input_source_list": "Lista ulaznih izvora ne mo\u017ee biti prazna",
+            "empty_listening_mode_list": "Lista re\u017eima slu\u0161anja ne mo\u017ee biti prazna",
+            "unknown": "Neo\u010dekivana gre\u0161ka"
+        },
+        "step": {
+            "configure_receiver": {
+                "data": {
+                    "input_sources": "Ulazni izvori",
+                    "listening_modes": "Re\u017eimi slu\u0161anja",
+                    "volume_resolution": "Rezolucija ja\u010dine zvuka"
+                },
+                "data_description": {
+                    "input_sources": "Lista ulaznih izvora koje risiver podr\u017eava.",
+                    "listening_modes": "Lista re\u017eima slu\u0161anja koje risiver podr\u017eava.",
+                    "volume_resolution": "Broj koraka potrebnih da risiver pre\u0111e od najni\u017ee do najvi\u0161e mogu\u0107e ja\u010dine zvuka."
+                },
+                "description": "Konfiguri\u0161ite {name}"
+            },
+            "eiscp_discovery": {
+                "data": {
+                    "device": "Ure\u0111aj"
+                },
+                "data_description": {
+                    "device": "Izaberite risiver za konfigurisanje."
+                }
+            },
+            "manual": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Naziv hosta ili IP adresa risivera."
+                }
+            },
+            "user": {
+                "menu_options": {
+                    "eiscp_discovery": "Pronala\u017eenje Onkyo ure\u0111aja",
+                    "manual": "Ru\u010dno uno\u0161enje"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_sound_mode": {
+            "message": "Nije mogu\u0107e izabrati re\u017eim zvuka \u201e{invalid_sound_mode}\u201d za entitet: {entity_id}."
+        },
+        "invalid_source": {
+            "message": "Nije mogu\u0107e izabrati ulazni izvor \u201e{invalid_source}\u201d za entitet: {entity_id}."
+        }
+    },
+    "options": {
+        "error": {
+            "empty_input_source_list": "Lista ulaznih izvora ne mo\u017ee biti prazna",
+            "empty_listening_mode_list": "Lista re\u017eima slu\u0161anja ne mo\u017ee biti prazna"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "input_sources": "Ulazni izvori",
+                    "listening_modes": "Re\u017eimi slu\u0161anja",
+                    "max_volume": "Maksimalno ograni\u010denje ja\u010dine zvuka (%)"
+                },
+                "data_description": {
+                    "input_sources": "Lista ulaznih izvora koje risiver podr\u017eava.",
+                    "listening_modes": "Lista re\u017eima slu\u0161anja koje risiver podr\u017eava.",
+                    "max_volume": "Maksimalno ograni\u010denje ja\u010dine zvuka u procentima. Ovo \u0107e povezati maksimalnu ja\u010dinu zvuka u Home Assistant-u sa ovom vredno\u0161\u0107u na risiveru, tj. ako ovo podesite na 50%, onda \u0107e pode\u0161avanje ja\u010dine zvuka na 100% u Home Assistant-u dovesti do toga da ja\u010dina zvuka na risiveru bude postavljena na 50% njegove maksimalne vrednosti."
+                }
+            },
+            "names": {
+                "sections": {
+                    "input_sources": {
+                        "description": "Mapiranja ulaznih izvora risivera na njihove nazive.",
+                        "name": "Nazivi ulaznih izvora"
+                    },
+                    "listening_modes": {
+                        "description": "Mapiranja re\u017eima slu\u0161anja risivera na njihove nazive.",
+                        "name": "Nazivi re\u017eima slu\u0161anja"
+                    }
+                }
+            }
+        }
+    }
+}
